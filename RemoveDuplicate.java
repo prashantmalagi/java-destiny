@@ -71,7 +71,6 @@ import java.util.HashSet;
 
 public class RemoveDuplicate {
 
-    // Method to remove duplicate characters
     public static java.lang.String removeDuplicates(java.lang.String str) {
 
         HashSet<Character> set = new HashSet<>();
