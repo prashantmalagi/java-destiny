@@ -13,5 +13,6 @@ public class MyString {
         System.out.println("Equals 'Hello, World!': " + str.equals("Hello, World!"));
         System.out.println("Substring from index 7: " + str.substring(7));
         System.out.println("Substring from index 7 to 12: " + str.substring(7, 12));
+        
     }
 }
