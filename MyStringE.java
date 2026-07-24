@@ -1,4 +1,4 @@
-public class MyString {
+public class MyStringE {
     public static void main(String[] args) {
         MyString a = new MyString();
         String str = "Hello, World!";
