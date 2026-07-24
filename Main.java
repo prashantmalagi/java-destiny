@@ -1,4 +1,4 @@
-public class Main {
+/* public class Main {
 
     float x;
 
@@ -11,5 +11,13 @@ public class Main {
         Main myObj = new Main(5.75f);
 
         System.out.println("Value of x = " + myObj.x);
+    }
+} */
+class Main {
+    public static void main(String[] args) {
+        GetSet obj = new GetSet(); // Object banaya
+        
+        obj.setName("Good Morning "); // Setter se value set ki
+        System.out.println(obj.getName()); // Getter se value print ki
     }
 }
