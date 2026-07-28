@@ -7,7 +7,7 @@ interface Shape {
     class Circle implements Shape {
         double radius;
 
-        public Circle(double radius) {
+        public Circle(String color, double radius) {
             this.radius = radius;
         }
 
@@ -25,7 +25,7 @@ interface Shape {
     class Rectangle implements Shape {
         double length, width;
 
-        public Rectangle(double length, double width) {
+        public Rectangle(String rectColor, double length, double width) {
             this.length = length;
             this.width = width;
         }
@@ -43,11 +43,11 @@ interface Shape {
 
     public class face {
         public static void main(String[] args) {
-            Shape circle = new Circle(5);
+            Shape circle = new Circle(color, 5);
             System.out.println("Circle Area: " + circle.calculateArea());
             System.out.println("Circle Perimeter: " + circle.calculatePerimeter());
 
-            Shape rectangle = new Rectangle(4, 6);
+            Shape rectangle = new Rectangle(rectColor, 4, 6);
             System.out.println("Rectangle Area: " + rectangle.calculateArea());
             System.out.println("Rectangle Perimeter: " + rectangle.calculatePerimeter());
         }
