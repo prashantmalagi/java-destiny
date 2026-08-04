@@ -1,4 +1,7 @@
 
+import java.util.Scanner;
+
+
 
 /*public class accesselmarray {
     int myNumbers[] = {10, 20, 30, 40, 50};
@@ -29,7 +32,7 @@
         }
     }
 }  */
-public class Array {
+/* public class Array {
     public static void main(String[] args) {
         int[][] arr = {
             {1, 4, 2},
@@ -45,4 +48,32 @@ public class Array {
             System.out.println();
         }
     }
+} */
+ 
+public class Array {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int size[] = new int[n];
+
+        for(int i=0;i<n;i++){
+            size[i] = sc.nextInt();
+        }
+
+        if (isAscending(size)){
+            System.out.println("The array is in ascending order.");
+        } else {
+            System.out.println("The array is not in ascending order.");
+        }
+    }
+
+    public static boolean isAscending(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
+        
